@@ -1,0 +1,37 @@
+Массив GameField[y][x] - заполненность игрового поля 8х8 (0, 1)
+Массив Chain [0...8*8-1][j,i] - массив индексов полей цепочки
+Массив Arr_last[Y_last,X_last] - координаты последней ячейки в цепочке
+Массив Arr_ji_last[j_last,i_last] - индексы последней ячейки в цепочке в массиве Arr[y][x]
+Массив Arr_slct[Y_slct,X_cur_slct] - координаты выбранной ячейки
+Массив Arr_ji_slct[j_slct,i_slct] - индексы выбранной ячейки в массиве Arr[y][x]
+Объект Around(Ячейка сверху, справо,снизу,слево) - заполненность ячеек вокруг последней в цепочке (0, 1)
+var FirstSquareIsSelected = false //false - выбранная - первая; true - выбранная - последующая, не первая 
+var SelectSquareArroundLast = false //выбранная ячейка около последней
+var GameFieldIsFull = false //заполненность игрового поля, true - победа
+var NextChoiceIsEnable = true //следующий ход возможен
+
+
+
+////////////////////////////////////////
+----------Щелчек мыши на поле-----------
+////////////////////////////////////////
+
+Получение [Y_slct,X_cur_slct]
+Получение [j_slct,i_slct] 
+
+if ((FirstSquareIsSelected=false) AND (Select пустая) //если select=first, то на arround проверять не надо 
+OR
+(FirstSquareIsSelected=true) AND (Select пустая) AND (Select = Around))
+
+{
+Удаление старых стрелок
+Продолжение цепочки
+Определение новых [Y_last,X_last], [j_last,i_last], Arround()
+Отрисовка стрелок вокруг последней ячейки в цепочке
+Определение GameFieldIsFull
+Определение NextChoiceIsEnable
+
+if (GameFieldIsFull=true) {ПОБЕДА, ход цепочки в обратном направлении}
+if ((GameFieldIsFull=false) AND (NextChoiceIsEnable=false) {ПРОИГРЫШ}
+
+}  
