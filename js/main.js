@@ -407,3 +407,6 @@ document.querySelector('#c1').onmousedown = function (event) {
       } //НЕ ПЕРВАЯ ЯЧЕЙКА
   }
 } //onmousedown
+
+window.onload = New_game();
+document.getElementById("input").addEventListener("click", New_game);
