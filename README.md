@@ -12,4 +12,4 @@
 ## Цель проекта
 * Изучение js;
 
-<img src="img/gh01.jpg" width="600">
+<img src="img/gh01.jpg" width="300">
