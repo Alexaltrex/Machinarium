@@ -1,0 +1,24 @@
+{
+  "name": "Machinarium",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexaltrex/Machinarium.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexaltrex/Machinarium/issues"
+  },
+  "homepage": "https://github.com/Alexaltrex/Machinarium#readme",
+  "dependencies": {
+    "terser": "^4.7.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
